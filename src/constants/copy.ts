@@ -4,27 +4,27 @@ const copy = {
     nav: [
         {
             title: 'Home',
-            link: '#home',
+            link: '/',
             target: '_self'
         },
         {
             title: 'Telegram',
-            link: 'https://telegram.com/t800_HQ',
+            link: LINKS.SOCIALS.TELEGRAM,
             target: '_blank'
         },
         {
             title: 'Twitter',
-            link: 'https://x.com/t800_HQ',
+            link: LINKS.SOCIALS.TWITTER,
             target: '_blank'
         },
         {
             title: 'Chart',
-            link: 'https://coingecko.com',
+            link: LINKS.CHART,
             target: '_blank'
         },
         {
             title: 'Buy',
-            link: 'https://app.uniswap.com',
+            link: LINKS.SWAP,
             target: '_blank'
         }
     ],
