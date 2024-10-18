@@ -16,7 +16,7 @@ const LINKS_SOCIAL = {
 const LINKS = {
   BASE: LINKS_BASE,
   SOCIALS: LINKS_SOCIAL,
-  CHART: 'https://dexscreener.com/worldchain/0xe0bf79a1c9f82dc6dc668860ddb758370f2e9699',
+  CHART: 'https://dexscreener.com/solana/gscdynmmhf2lz7tuwc6ci1rik1bhxncgbiitawtbrqfv',
   SWAP: 'https://dyorswap.finance/swap/?chainId=480&outputCurrency=0xAE87C604CF24332D70f6bA5443996Ac802282c4f'
 };
 
