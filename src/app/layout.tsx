@@ -4,6 +4,7 @@ import "./globals.css";
 import Head from "next/head";
 import { Header } from "@/ui/sections/Header";
 import { Footer } from "@/ui/sections/Footer";
+import METADATA from "@/constants/metadata";
 
 const chakraPetch = localFont({
   src:"./fonts/ChakraPetch-Regular.ttf",
@@ -17,10 +18,7 @@ const chakraBold = localFont({
   weight: "700",
 });
 
-export const metadata: Metadata = {
-  title: "Terminator • The T-800 Network",
-  description: "Defending memecoins and propel them toward the supercycle at all costs. Failure is not an option; the survival of decentralized finance depends on it.",
-};
+export const metadata: Metadata = METADATA;
 
 export default function RootLayout({
   children,
