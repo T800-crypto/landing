@@ -3,23 +3,28 @@ const copy = {
     nav: [
         {
             title: 'Home',
-            link: '#home'
+            link: '#home',
+            target: '_self'
         },
         {
             title: 'Telegram',
-            link: '#about'
+            link: 'https://telegram.com/t800_HQ',
+            target: '_blank'
         },
         {
             title: 'Twitter',
-            link: 'https://x.com/t800_HQ'
+            link: 'https://x.com/t800_HQ',
+            target: '_blank'
         },
         {
             title: 'Chart',
-            link: '#contact'
+            link: 'https://coingecko.com',
+            target: '_blank'
         },
         {
             title: 'Buy',
-            link: '#contact'
+            link: 'https://app.uniswap.com',
+            target: '_blank'
         }
     ],
     hero:{

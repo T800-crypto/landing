@@ -6,7 +6,7 @@ import copy from "@/constants/copy";
 export const Mission = () => {
   return (
     <Section>
-      <div className="w-full md:flex gap-8 justify-center items-center mt-32">
+      <div className="w-full md:flex gap-8 justify-center items-center my-44">
       <div>
         <img
           src={copy.mission.image}

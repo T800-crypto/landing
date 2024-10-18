@@ -1,13 +1,31 @@
-import React from "react";
+"use client"
+
+import React, { useEffect } from "react";
 import copy from "../../constants/copy";
 import { MobieMenu } from "./MobiMenu";
+import useWindowScroll from "@/hooks/use-window-scroll";
 
 export const Header = () => {
+  const { scrollY } = useWindowScroll();
+  
+  useEffect(() => {
+    if(scrollY && typeof window !== undefined) {
+      const el = document.getElementById('navbar');
+      if(el) {
+        if (scrollY > 50) {
+          el.style.backgroundColor = "black";
+        } else {
+          el.style.backgroundColor = "transparent";
+        }
+      }
+    }
+  }, [scrollY])
+
   return (
-    <nav className="fixed z-50 top-0 w-full bg-black py-4 px-4 font-[family-name:var(--font-chakra-petch-bold)]">
-      <div className=" rounded-md flex justify-between items-center px-6 ">
+    <nav id="navbar" className="transition duration-300 fixed z-50 top-0 w-full  py-4 px-4 font-[family-name:var(--font-chakra-petch-bold)]">
+      <div className=" rounded-md flex justify-between items-center px-3 md:px-4 ">
         <a className="" href="#hero">
-          <h1 className="font-chakra-bold">T-800</h1>
+          <h3 className="font-chakra-bold">Terminator</h3>
         </a>
         <div className="">
           <ul className="hidden md:flex">
@@ -15,16 +33,24 @@ export const Header = () => {
               if (item.title === "Buy") {
                 return (
                   <li
-                    key={index}
-                    className="border rounded-md border-gold px-4 py-1 "
+                    key={`header-link-${index}`}
+                    
                   >
-                    <a href={item.link}>{item.title}</a>
+                    <a href={item.link} target={item.target}>
+                    <div className="border rounded-md border-gold px-4 py-1 ml-2 transition duration-150 hover:opacity-90">
+                      {item.title}
+                      </div>
+                    </a>
                   </li>
                 );
               } else {
                 return (
-                  <li key={index} className="px-4 py-1">
-                    <a href={item.link}>{item.title}</a>
+                  <li key={`header-link-${index}`}>
+                    <a href={item.link} target={item.target}>
+                      <div className="px-4 py-1 transition duration-150 hover:opacity-90">
+                        {item.title}
+                      </div>
+                    </a>
                   </li>
                 );
               }
