@@ -7,7 +7,7 @@ export const Footer = () => {
             <h1>T-800</h1>
         </div>
         <div className=' w-full flex justify-end pr-20 '>
-            <ul className='text-right flex flex-col gap-4'>
+            <ul className=' text-center md:text-right flex flex-col gap-4'>
                 <li>Telegram</li>
                 <li>GitHub</li>
                 <li>Twitter</li>
