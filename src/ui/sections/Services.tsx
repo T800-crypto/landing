@@ -5,7 +5,7 @@ export const Services = () => {
   return (
     <Section>
       <div className="">
-        <div className="md:mx-20 md:mb-32 mt-24 flex flex-col justify-center items-center text-center gap-4 md:p-12 p-4 border-dashed border-[10px] border-red-800">
+        <div className="mx-2 md:mx-20 md:mb-32 mt-24 flex flex-col justify-center items-center text-center gap-4 md:p-12 p-4 py-8 md:py-6 border-dashed border-[10px] border-red-800">
           <div className="space-y-6 max-w-screen-md text-center">
           <h1>{copy.services.title}</h1>
           <p>{copy.services.p1}{copy.services.p2}</p>

@@ -22,7 +22,7 @@ export const Header = () => {
   }, [scrollY])
 
   return (
-    <nav id="navbar" className="transition duration-300 fixed z-50 top-0 w-full  py-4 px-4 font-[family-name:var(--font-chakra-petch-bold)]">
+    <nav id="navbar" className="transition duration-300 fixed z-50 top-0 w-full  py-4 px-2 md:px-4 font-[family-name:var(--font-chakra-petch-bold)]">
       <div className=" rounded-md flex justify-between items-center px-3 md:px-4 ">
         <a className="" href="#hero">
           <h3 className="font-chakra-bold">Terminator</h3>
