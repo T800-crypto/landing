@@ -9,11 +9,11 @@ export const Hero = () => {
       <div className="absolute w-screen md:w-[130%] h-[120%] top-0 left-0 bg-black bg-opacity-40 backdrop-blur-md " />
       {/* <div className="md:hidden flex justify-center bg-[url('/images/t800-hero.png')] bg-cover min-h-[360px]" /> */}
       <div
-        className="w-full h-screen flex justify-center md:justify-none text-center md:text-left lg:mx-12"
+        className="w-full h-screen flex justify-center md:justify-none text-center md:text-left lg:mx-12 text-white"
         id="hero"
       >
-        <div className="md:max-w-screen-md h-full mt-12 sm:mt-16 md:mt-24 relative z-10">
-          <div className="flex flex-col px-6 py-10 gap-8 h-full ">
+        <div className="md:max-w-screen-md h-full mt-12 sm:mt-16 md:mt-0 relative z-10 text-white">
+          <div className="flex flex-col px-6 py-10 gap-8 h-full md:justify-center">
             <div className="uppercase space-y-4">
               <h1 className="md:text-6xl">{copy.hero.title.split(":")[0]}</h1>
               <h2>{copy.hero.title.split(":")[1]}</h2>
@@ -35,10 +35,13 @@ export const Hero = () => {
           </div>
           </div>
         </div>
-        <div className="justify-end items-end w-full m-4 hidden md:flex z-10">
+        <div className="justify-center items-center w-full m-4 hidden md:flex z-10" id="zapier">
           {/* <p className="text-2xl font-bold text-red-600 font-chakra-bold">
             T-800
           </p> */}
+          <script async type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
+          {/* @ts-ignore */}
+          <zapier-interfaces-chatbot-embed is-popup='false' chatbot-id='cm2e0maiv002ez4edbddqguol' height='600px' width='400px'></zapier-interfaces-chatbot-embed>
         </div>
       </div>
     </Section>

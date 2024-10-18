@@ -1,3 +1,4 @@
+import LINKS from "./links";
 
 const copy = {
     nav: [
@@ -53,17 +54,17 @@ const copy = {
     },
     footer:{
         items:[
-            {
-                title:"GitHub",
-                link:"https://github.com/orgs/T800-crypto,"
-            },
+            // {
+            //     title:"GitHub",
+            //     link:"https://github.com/orgs/T800-crypto,"
+            // },
             {
                 title:"Telegram",
-                link:"https://t.me/T800HQ"
+                link: LINKS.SOCIALS.TELEGRAM
             },
             {
                 title:"Twitter",
-                link:"https://twitter.com/T800_HQ"
+                link: LINKS.SOCIALS.TWITTER
             }
         ]
      

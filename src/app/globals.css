@@ -39,7 +39,11 @@ h3 {
 }
 
 p {
-  @apply sm:text-lg leading-[26px];
+  @apply sm:text-lg leading-[26px] font-bold;
+}
+
+iframe {
+  @apply !rounded-xl;
 }
 
 

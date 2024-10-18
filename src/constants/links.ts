@@ -10,6 +10,7 @@ const LINKS_BASE =
 const LINKS_SOCIAL = {
   TWITTER: `https://x.com/${SOCIALS.TWITTER}`,
   GITHUB: `https://github.com/${SOCIALS.GITHUB}`,
+  TELEGRAM: `https://t.me/T800HQ`
 };
 
 const LINKS = {
