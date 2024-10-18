@@ -3,7 +3,6 @@ import { useCallback, useEffect, useState } from "react";
 export default function useWindowScroll() {
   const [scrollY, setScrollY] = useState<number | null>(null);
   const onScroll = useCallback(() => {
-    const { pageYOffset, scrollY } = window;
     setScrollY(window.pageYOffset);
   }, []);
 
