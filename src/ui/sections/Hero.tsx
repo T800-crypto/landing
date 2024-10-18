@@ -1,7 +1,7 @@
 import React from "react";
 import { Section } from "@/ui/components/Section";
 import copy from "@/constants/copy";
-import Image from "next/image";
+
 
 export const Hero = () => {
   return (
@@ -18,7 +18,6 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-   
     </Section>
   );
 };

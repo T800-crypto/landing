@@ -6,7 +6,7 @@ import Image from "next/image";
 export const Mission = () => {
   return (
     <Section>
-      <div className="w-full flex gap-8 justify-center items-center">
+      <div className="w-full flex gap-8 justify-center items-center mt-32">
       <div>
         <Image
           src={copy.mission.image}

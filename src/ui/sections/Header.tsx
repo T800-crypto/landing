@@ -1,6 +1,6 @@
 import React from "react";
 import copy from "../../constants/copy";
-import Image from "next/image";
+
 
 export const Header = () => {
   return (

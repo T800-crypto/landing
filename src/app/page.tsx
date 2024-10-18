@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import { Hero, About, Services, Mission } from "@/ui/sections";
 
 export default function Home() {
