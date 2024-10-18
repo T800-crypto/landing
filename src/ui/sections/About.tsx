@@ -13,14 +13,13 @@ export const About = () => {
           <p>{copy.about.p2}</p>
         </div>
         <div className="relative md:w-1/2 flex items-center justify-center">
-          <div className="absolute inset-0 border-[20px] border-black filter blur-lg rounded-full"></div>
           <div className="md:pl-20">
             <img
               src={copy.about.image}
               alt={copy.about.title}
               width={400}
               height={400}
-              className="rounded-full"
+              className="rounded-full shadow shadow-black"
             ></img>
           </div>
         </div>

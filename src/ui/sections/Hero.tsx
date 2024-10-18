@@ -5,8 +5,8 @@ import copy from "@/constants/copy";
 export const Hero = () => {
   return (
     <Section clasName={"relative w-full"}>
-      <div className="h-[120%] w-full md:w-auto bg-center md:bg-top bg-[url('/images/t800-hero.png')] bg-cover backdrop-blur-md md:-right-[30%] md:-top-[20%] absolute left-0" />
-      <div className="absolute w-screen md:w-[130%] h-[120%] top-0 left-0 bg-black bg-opacity-40 backdrop-blur-md " />
+      <div className="h-screen w-full md:w-auto bg-center md:bg-top bg-[url('/images/t800-hero.png')] bg-cover backdrop-blur-md md:-right-[30%] absolute left-0" />
+      <div className="absolute w-screen md:w-[130%] h-screen top-0 left-0 bg-black bg-opacity-40 backdrop-blur-md " />
       {/* <div className="md:hidden flex justify-center bg-[url('/images/t800-hero.png')] bg-cover min-h-[360px]" /> */}
       <div
         className="w-full h-screen flex justify-center md:justify-none text-center md:text-left lg:mx-12 text-white"
