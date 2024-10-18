@@ -40,7 +40,7 @@ export const Hero = () => {
             T-800
           </p> */}
           <script async type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
-          {/* @ts-ignore */}
+          {/* @ts-expect-error: this is not a valid HTML tag */}
           <zapier-interfaces-chatbot-embed is-popup='false' chatbot-id='cm2e0maiv002ez4edbddqguol' height='600px' width='400px'></zapier-interfaces-chatbot-embed>
         </div>
       </div>
