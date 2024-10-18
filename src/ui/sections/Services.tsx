@@ -6,9 +6,9 @@ export const Services = () => {
     <Section>
       <div className="">
         <div className="md:mx-20 md:mb-32 mt-20 flex flex-col justify-center items-center text-center gap-4 md:p-12 p-6 border-dashed border-[10px] border-red-800">
-          <div>
+          <div className="space-y-6">
           <h1>{copy.services.title}</h1>
-          <p>{copy.services.p1}</p>
+          <p>{copy.services.p1}{copy.services.p2}</p>
           <p>{copy.services.p2}</p>
           </div>
           <div className="md:mt-20 mt-10">

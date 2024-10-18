@@ -6,7 +6,7 @@ export const About = () => {
   return (
     <Section clasName="md:px-32 px-4 mt-44 mb-20">
       <div className="flex flex-col-reverse md:flex-row md:mx-auto md:min-h-[600px]">
-        <div className="md:w-1/2 text-center md:text-left mt-10 md:mt-0">
+        <div className="md:w-1/2 text-center md:text-left mt-10 md:mt-0 space-y-6">
           {" "}
           <h1>{copy.about.title}</h1>
           <p>{copy.about.p1}</p>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Section } from "@/ui/components/Section";
 import copy from "@/constants/copy";
+
 export const Hero = () => {
   return (
     <Section clasName={"relative w-full mt-20 "}>
