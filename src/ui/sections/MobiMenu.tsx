@@ -1,6 +1,6 @@
 "use client";
 
-import { Fragment, ReactNode, useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { useWindowSize } from "../../hooks/use-window-size";
 
 // interfaces
@@ -15,8 +15,6 @@ interface IDashboardLayout {
   type?: "miners" | "default";
 }
 
-// styles
-const baseClassName = `group rounded flex p-2 transition duration-150 w-full text-md`;
 
 // functional component
 export const MobieMenu = ({
