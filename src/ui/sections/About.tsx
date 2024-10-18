@@ -1,7 +1,6 @@
 import React from "react";
 import { Section } from "@/ui/components/Section";
 import copy from "@/constants/copy";
-import Image from "next/image";
 
 export const About = () => {
   return (
@@ -16,13 +15,13 @@ export const About = () => {
         <div className="relative md:w-1/2 flex items-center justify-center">
           <div className="absolute inset-0 border-[20px] border-black filter blur-lg rounded-full"></div>
           <div className="md:pl-20">
-            <Image
+            <img
               src={copy.about.image}
-              alt={copy.about.title}
+              // alt={copy.about.title}
               width={500}
               height={500}
               className="rounded-full"
-            ></Image>
+            ></img>
           </div>
         </div>
       </div>

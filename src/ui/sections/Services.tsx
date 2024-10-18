@@ -1,7 +1,6 @@
 import React from "react";
 import { Section } from "@/ui/components/Section";
 import copy from "@/constants/copy";
-import Image from "next/image";
 export const Services = () => {
   return (
     <Section>
@@ -13,7 +12,7 @@ export const Services = () => {
           <p>{copy.services.p2}</p>
           </div>
           <div className="md:mt-20 mt-10">
-            <Image src="/images/t800-coin.png" width={200} height={200} alt="terminator coin" className="rounded-full"/>
+            <img src="/images/t800-coin.png" width={200} height={200} className="rounded-full"/>
           </div>
         </div>
       </div>
